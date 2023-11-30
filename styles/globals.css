@@ -155,13 +155,13 @@ hr {
 }
 
 .hero-container .social-icons a {
-  color: #9B9C9D;
+  color: #5d5f60;
   font-size: 1.5rem;
   transition: all 0.5s ease-in-out;
 }
 
 .hero-container .social-icons a:hover {
-  color: #DADADB;
+  color: #5d5f60;
 }
 
 .hero-container .hero-text .waving-emoji {
@@ -182,27 +182,115 @@ hr {
   }
 }
 
-.scrolldown-reminder {
-  text-align: center;
-  animation: fadeIn 5s;
-  opacity: 0;
-  position: fixed;
-  bottom: 10px; /* Adjust the distance from the bottom as needed */
-  left: 0;
-  right: 0;
-  text-align: center;
+/*Scrolldown Reminder */
+
+.scroll-down-dude {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: fadeOut 10s ease forwards; /* Updated to fade out after 10 seconds */
 }
 
-@keyframes fadeIn {
-  0% {
+.scroll-down-dude:before,
+.scroll-down-dude:after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  border-bottom: 4px solid white;
+  border-right: 4px solid white;
+}
+
+.scroll-down-dude:before {
+  animation: down-arrow-before 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+.scroll-down-dude:after {
+  animation: down-arrow-after 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+@keyframes down-arrow-before {
+  50% {
+    transform: rotate(45deg) translate(70%, 70%);
+  }
+  100% {
+    transform: rotate(45deg) translate(70%, 70%);
+  }
+}
+
+@keyframes down-arrow-after {
+  50% {
+    transform: rotate(45deg) translate(110%, 110%);
     opacity: 0;
   }
-  50% {
+  51% {
+    transform: rotate(45deg) translate(-130%, -130%);
+  }
+  100% {
+    transform: rotate(45deg) translate(-70%, -70%);
     opacity: 1;
   }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/* Target section styling */
+#target-section {
+  margin-top: 500vh; /* Adjust the margin to create space for the fixed header */
+  padding: 20px;
+  background-color: #5d5f60; /* Adjust the background color as needed */
+}
+
+
+/* Custom Animate.css */
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.4, .4, .4);
+            transform: scale3d(.4, .4, .4);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  
   100% {
     opacity: 0;
   }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.4, .4, .4);
+            transform: scale3d(.4, .4, .4);
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+  
+  100% {
+    opacity: 0;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
 }
 
 /* About */
@@ -347,7 +435,7 @@ hr {
   gap: 2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .projects-grid {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -357,12 +445,15 @@ hr {
   border: 1px solid #e6e6e6;
   padding: 20px;
   border-radius: 5px;
+  text-align: left;
+  width: 100%;
 }
 
 .project-card .project-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   margin-bottom: 20px;
 }
 

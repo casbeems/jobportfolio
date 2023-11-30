@@ -7,9 +7,8 @@ const About = () => {
       <div className="flex-about">
         <div className="about-text">
           <p>
-            As a business analyst, I have always been passionate about being the communicational bridge between people. 
-            I have a strong foundation in the broad aspects on computer science, with a focus on web
-            technologies, cyber security and large data. I especially enjoy working in multi-disciplinary teams as I get really energized from working with skilled enthusiastic people. 
+            
+As a digital enthusiast, I'm passionate about communicating IT intricacies across disciplines. My strong foundation in computer science, emphasizing web technologies, cybersecurity, and large data, complements my enjoyment of working in multi-disciplinary teams. I thrive in the dynamic energy of collaborating with skilled professionals, fostering an environment where innovative solutions flourish.
           </p>
           <p>Throughout my (relatively short) career, I have worked on a various projects, from simple static websites to
             complex enterprise-level e-commerce applications. I am always eager

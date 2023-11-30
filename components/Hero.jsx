@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="hero-text">
         <h1>Hi, I'm Cas <span className="waving-emoji">👋</span></h1>
         <p>
-          I'm a digital enthusiast based in Leiden, Netherlands. I specialize in business analysis, agile portfolio management, big data, cyber security and more! 
+          I'm a digital enthusiast based in Leiden, The Netherlands. I specialize in business analysis, agile portfolio management, big data, cyber security and more! 
         </p>
         <p>
 
@@ -31,12 +31,10 @@ const Hero = () => {
             <i className="fa-brands fa-linkedin"></i>
           </a>
         </div>
-        <div className="scrolldown-reminder">
-            <p>Don't forget to scroll down ;-)</p>
-        </div>
+        <div class="scroll-down-dude"></div>
       </div>
     </div>
   )
 }
-
+<script src="script.js"></script>
 export default Hero;
