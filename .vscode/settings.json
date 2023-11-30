@@ -1,4 +1,6 @@
 {
-    "appService.defaultWebAppToDeploy": "undefined/subscriptions/a71a8593-c8f0-487e-9112-6b52c6228e45/resourceGroups/my-portfolio_group/providers/Microsoft.Web/sites/portfolio-cas-2",
-    "appService.deploySubpath": "."
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
 }
