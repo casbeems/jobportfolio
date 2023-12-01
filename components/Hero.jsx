@@ -31,7 +31,7 @@ const Hero = () => {
             <i className="fa-brands fa-linkedin"></i>
           </a>
         </div>
-        <div class="scroll-down-dude"></div>
+        <div className="scroll-down-dude"></div>
       </div>
     </div>
   )
