@@ -10,7 +10,7 @@ const Navbar = () => {
           Cas's Portfolio
         </Link>
       </div>
-      <a href="https://drive.google.com/file/d/1yFgYBtN_HX783hxWByOuS3MVA7tKXqS0/view?usp=share_link" className="cta-btn">Resume
+      <a href="https://drive.google.com/file/d/1yFgYBtN_HX783hxWByOuS3MVA7tKXqS0/view?usp=sharing" className="cta-btn">Resume
       </a>
     </div>
   )
