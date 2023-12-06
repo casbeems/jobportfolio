@@ -38,7 +38,7 @@ My responsibilities centered around pinpointing user requirements, effectively c
                 <h4>The 'stationsluisterbank'</h4>
               </div>
               <p>
-As a side project with my co-trainees, we collaboratively built a 'stationsluisterbank,' a sustainable bench strategically placed at NS stations. The purpose behind this initiative was to establish an accessible space for people to engage in conversation and connect with one another. Currently, you can find the bench at Breda Centraal, embodying our commitment to fostering communal spaces within transportation hubs. 
+As a side project with my co-trainees, we collaboratively built a 'stationsluisterbank', a sustainable bench strategically placed at NS stations. The purpose behind this initiative was to establish an accessible space for people to engage in conversation and connect with one another. Currently, you can find the bench at Breda Centraal, embodying our commitment to fostering communal spaces within transportation hubs. 
               </p>
             </div>
 
